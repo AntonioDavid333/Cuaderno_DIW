@@ -1,0 +1,155 @@
+
+body{
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+/*EJERCICIO 2*/
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(51, 51, 51);
+    color: rgb(183, 255, 202);
+}
+nav> div{
+    background-color: rgb(77, 77, 77);
+    color: white;
+    padding: 0.5em;
+    margin: 0.2em;
+}
+nav> h3{
+    margin: 0.3em;
+}
+/*_____________________________________________________*/
+/*EJERCICIO 1*/
+
+#a1{
+    background-color: lightgray;
+    border: 2px solid;
+    gap: 1em;
+    padding: 5%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#a1 div{
+    background-color: lightcoral;
+    border: 1px crimson solid;
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+/*_____________________________________________________*/
+/*EJERCICIO 3*/
+#a3{
+    box-sizing: border-box;
+    /* height: 15%; */
+    margin: 1em;
+    background-color: lightgray;
+    border: 2px solid rgb(95, 222, 184);
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 1em;
+}
+#a3 div{
+    background-color: white;
+    height: 100%;
+    flex-grow: 1;
+    border: 1px rgb(255, 113, 142) solid;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+/*_____________________________________________________*/
+/*EJERCICIO 4*/
+
+#a4{
+    margin: auto;
+    border:  solid;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+}
+#barraMensajes{
+    display: flex;
+    gap: 0.5em;
+    order: 2;
+    padding: 1em;
+    border-top: 1px solid lightslategray;
+    flex-shrink: 2;
+    
+}
+#barraMensajes input{
+    flex-grow: 1;
+    
+    padding-left: 10px;
+    
+}
+#chat{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 1em;
+    padding-bottom: 3em;
+    flex-grow: 8;
+}
+button{
+    background-color: rgb(57, 126, 176);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    flex-shrink: 1;
+
+
+    
+}
+#chat>div{
+    background-color: lightskyblue;
+    width: 80%;
+    border-radius: 20px;
+    padding:3px 15px 3px 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+
+}
+#m1{
+    order: 4;
+}
+#m2{
+    order: 1;
+}
+#m3{
+    order: 2;
+}
+#m4{
+    order: 3;
+}
+#m5{
+    order: 5;
+}
+#m6{
+    order: 6;
+}
+#m7{
+    order: 7;
+}
+#m8{
+    order: 8;
+}
+#m9{
+    order: 9;
+}
+
+
+
