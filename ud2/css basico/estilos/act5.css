@@ -73,8 +73,7 @@ nav> h3{
     border:  solid;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 500px;
+    width: 40%;
 }
 #barraMensajes{
     display: flex;
@@ -82,74 +81,20 @@ nav> h3{
     order: 2;
     padding: 1em;
     border-top: 1px solid lightslategray;
-    flex-shrink: 2;
-    
+    flex-grow: 1;
 }
 #barraMensajes input{
     flex-grow: 1;
-    
-    padding-left: 10px;
-    
 }
 #chat{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 1em;
-    padding-bottom: 3em;
-    flex-grow: 8;
 }
 button{
     background-color: rgb(57, 126, 176);
     color: white;
-    padding: 10px 20px 10px 20px;
+    padding: 5%;
     border: 0px;
-    flex-shrink: 1;
-
-
+    flex-shrink: 4;
     
 }
-#chat>div{
-    background-color: lightskyblue;
-    width: 80%;
-    border-radius: 20px;
-    padding:3px 15px 3px 15px;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-
-}
-#m1{
-    order: 4;
-}
-#m2{
-    order: 1;
-}
-#m3{
-    order: 2;
-}
-#m4{
-    order: 3;
-}
-#m5{
-    order: 5;
-}
-#m6{
-    order: 6;
-}
-#m7{
-    order: 7;
-}
-#m8{
-    order: 8;
-}
-#m9{
-    order: 9;
-}
-
-
 

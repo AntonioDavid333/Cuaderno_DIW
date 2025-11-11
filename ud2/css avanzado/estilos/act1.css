@@ -1,0 +1,187 @@
+/*MOVIL*/
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(rgb(235, 235, 235), rgb(219, 219, 219));
+  }
+  .contenedor-tarjeta{
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    margin-top: 2em;
+    overflow: hidden;
+    
+  }
+  .tarjeta-imagen{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  .tarjeta-contenido{
+    font-size: 1em;
+    text-align: center;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+  }
+  .tarjeta-contenido>h2{
+    margin-top: 0;
+  }
+  .tarjeta-contenido>p{
+    color: gray;
+  }
+
+  .boton{
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(12, 158, 255), rgb(7, 64, 170));
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 25px;
+    
+  }
+  
+
+}
+
+/*TABLET*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(90deg,rgb(216, 246, 255),rgb(66, 207, 250));
+
+  }
+.contenedor-tarjeta{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 2em;
+    overflow: hidden;
+    
+  }
+  .tarjeta{
+    display: flex;
+  }
+  .tarjeta-imagen{
+    flex-basis: 50%;
+    
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tarjeta-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 66%;
+    font-size: 1em;
+    text-align: center;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+  }
+  .tarjeta-contenido>h2{
+    margin-top: 0;
+    text-align: left;
+  }
+  .tarjeta-contenido>p{
+    font-size: 1em;
+    color: gray;
+    text-align: left;
+  }
+
+  .boton{
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(12, 158, 255), rgb(7, 64, 170));
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 50px;
+    text-align: left;
+    
+  }
+  
+
+}
+
+/*ORDENADOR*/
+@media (min-width: 1025px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: lightgray;
+  }
+  .contenedor-tarjeta{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 50%;
+    height: 40%;
+    margin-top: 8em;
+    overflow: hidden;
+    
+  }
+  .tarjeta{
+    display: flex;
+  }
+  .tarjeta-imagen{
+    flex-basis: 50%;
+    
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tarjeta-contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 66%;
+    font-size: 1em;
+    text-align: center;
+    padding: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+  }
+  .tarjeta-contenido>h2{
+    margin-top: 0;
+    text-align: left;
+  }
+  .tarjeta-contenido>p{
+    font-size: 1em;
+    color: gray;
+    text-align: left;
+  }
+
+  .boton{
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(12, 158, 255), rgb(7, 64, 170));
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 50px;
+    text-align: left;
+    
+  }
+}
