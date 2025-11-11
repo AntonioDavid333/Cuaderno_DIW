@@ -1,11 +1,37 @@
- body{
+ /*
+ Blue #8eb2c0
+ Cream #f3f6f0
+ Charcoal #355360
+ Cognac #8a6460
+ palette Along the Shore: https://www.canva.com/colors/color-palettes/along-the-shore/
+ 
+ */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Pinyon+Script&display=swap');
+
+ 
+ body{      
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Numans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             text-align: center;
-            background-color:lightslategray;
+            background-color:#f3f6f0;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
         }
         header{
-            border: solid 2px;
-            border-radius: 20px;
-            background-color: rgb(83, 95, 107);
+            /* border: solid 2px;
+            border-radius: 20px; */
+            position: fixed;
+            top: 0;
+            padding: 1em;
+            width: 100vw;
+            background-color: #8eb2c0;
         }
         header>h3{
             background-color: goldenrod;
@@ -15,8 +41,30 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         main{
+            margin-top: 10%;
+            box-shadow: 1px 1px 10px 1px #85abbd;
+            background-color: white;
+            width: 40%;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+        main ul{
+            list-style: none;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+        }
+        main ul li{
+            border: 1px solid #355360;
+            padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            border-left: 4em solid #8a6460;
+            width: 40%;
+            box-shadow: 1px,1px,5px #355360;                      
         }
         article{
             /*border: solid 4px;*/
@@ -56,4 +104,19 @@
             font-size: large;
             font-family: Arial, Helvetica, sans-serif;
             text-align: left;
+        }
+        footer{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1em;
+            background-color: white;
+        }
+        footer p{
+            font-size: 0.9em;
+            border-left: rgb(139, 217, 139) 1em solid;
+            padding: 1em;
+            
+        }
+        li:hover{
+            transform: scale(1.05);
         }
