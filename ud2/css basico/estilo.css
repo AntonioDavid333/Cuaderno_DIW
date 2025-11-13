@@ -1,0 +1,47 @@
+body{
+    padding-top: 10%;
+    background-color: #F2F1E8;
+    font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1, h2{
+    color: #00BAD8;
+}
+legend{
+    background-color: #FF173B;
+    color: white;
+    font-weight: bold;
+    border-radius: 10%;
+    font-size: 1em;
+    text-align: right;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+fieldset{
+    border-bottom-left-radius: 20%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: white;
+    text-align:  center;
+    padding: auto;
+    margin: auto;
+    width: 20%;
+    border-color: #006F83;
+    border-style: dashed;
+}
+
+div{
+    color:#041022;
+    margin: 2em 2em;
+}
+
+label:hover, input:hover{
+    font-weight: bold;
+}
+
+input{
+    border-radius: 10%;
+}
+
