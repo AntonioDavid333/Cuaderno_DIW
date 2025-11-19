@@ -53,7 +53,7 @@ input[type='checkbox']:checked ~ .cortinilla{
 }
 input[type='checkbox']:checked ~ .contenido-principal{
     opacity: 100%;
-    transform: translatey(10px) ;
+    transform: translatey(0) ;
     
 }
 

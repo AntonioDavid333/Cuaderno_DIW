@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+h1{
+    color: lightcoral;
+}
+p{
+    color: white;
+}
+#imagenes{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.foto{
+    color: white;
+    width: 25%;
+    background-color: rgb(38, 38, 38);
+    padding: 1em;
+    border-radius: 10px;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+.foto img:hover{
+    filter: none !important;
+    transform: scale(1.05);
+}
+#i1{
+    filter: grayscale(100%);
+    transition: filter ease-out 0.3s;
+}
+#i2{
+    filter: blur(2px);
+    transition: filter ease-out 0.3s;
+    
+}
+#i3{
+    filter: sepia(100%);
+    transition: filter ease-out 0.3s;
+}
+#i4{
+    filter: saturate(3);
+    transition: filter ease-out 0.3s;
+    
+}
+#i5{
+    filter: invert();
+    transition: filter ease-out 0.3s;
+    
+}
+#i6{
+    filter: brightness(50%) contrast(150%);
+    transition: filter ease-out 0.3s;
+   
+}
+#i7{
+   filter: hue-rotate(90deg);
+   transition: filter ease-out 0.3s; 
+}
+#i8{
+    filter: drop-shadow(1px 1px 5px rgb(117, 0, 0)) drop-shadow(-1px -1px 5px red);
+    transition: filter ease-out 0.3s;
+    
+}
+
+
