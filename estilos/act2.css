@@ -33,6 +33,9 @@ h2{
     background-color: #f3f6f0;
 }
 h3{
+    text-align: center;
+    padding: 1em;
+    border-bottom: solid #355360 ;
     color: #8a6460;
 }
 .paleta{
