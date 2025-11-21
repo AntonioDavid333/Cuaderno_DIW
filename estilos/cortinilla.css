@@ -1,0 +1,60 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+.boton {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4em;
+    background-color: rgb(20, 105, 161);
+    padding: 1em 2em;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: background-color .3s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(45, 145, 15);
+}
+
+.cortinilla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/icono/icono.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: transform 1s ease-out;
+    z-index: 20;
+}
+
+.contenido-principal {
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(40px);
+    height: auto;
+    width: 50vw;
+    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+    transition-delay: .3s;
+    z-index: 10;
+}
+
+input[type="checkbox"]:checked ~ .cortinilla {
+    transform: translateY(-100%);
+}
+
+input[type="checkbox"]:checked ~ .contenido-principal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

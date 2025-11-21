@@ -6,20 +6,46 @@
     <link rel="icon" type="image/png" href="icono/icono.png">
     <title>Cuaderno Diseño Interfaces Web</title>
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/cortinilla.css">
+    <link rel="stylesheet" href="estilos/tarjetas.css">
 </head>
 <body>
-    <header>
-        <h1>Cuaderno Diseño Interfaces Web</h1>
-    </header>
-    <main>
-        <ul>
-            <li><a href="ud1/index.html">Unidad 1</a></li>
-            <li><a href="ud2/index.html">Unidad 2</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>Antonio David Aranda Cazalilla</p>
-        <p>Rubén González García</p>
-    </footer>
+    <input type="checkbox" id="chk">
+    
+    <div class="cortinilla">
+        <label for="chk" class="boton">Cuaderno Diseño Interfaces Web</label>
+    </div>
+
+    <div class="contenido-principal">
+        <header>
+        <h1>Índice principal</h1>
+        </header>
+        <main id="galeria">
+            <article class="tarjeta">
+                <div class="tarjeta-fondo"></div>
+                <div class="tarjeta-overlay">
+                    <h2 class="tarjeta-titulo">Unidad 1</h2>
+                </div>
+                <div class="tarjeta-borde-animado"></div>
+                <p class="tarjeta-descripcion"><a href="ud1/index.html">Unidad 1</a></p>
+            </article>
+
+            <article class="tarjeta">
+                <div class="tarjeta-fondo"></div>
+                <div class="tarjeta-overlay">
+                    <h2 class="tarjeta-titulo">Unidad 2</h2>
+                </div>
+                <div class="tarjeta-borde-animado"></div>
+                <p class="tarjeta-descripcion"><a href="ud2/index.html">Unidad 2</a></p>
+            </article>
+        </main>
+        <footer>
+            <p>Antonio David Aranda Cazalilla</p>
+            <p>Rubén González García</p>
+        </footer>
+    </div>
+
+
+    
 </body>
 </html>
