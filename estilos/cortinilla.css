@@ -22,7 +22,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/icono/icono.png");
+    background-image: url("../icono/icono.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
