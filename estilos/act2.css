@@ -57,3 +57,16 @@ img{
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
+footer{
+    border-radius: 5px;
+    position: fixed;
+    text-decoration: none;
+    font-size: 40px;
+    top: 40px;
+    left: 50px;
+    text-align: center;
+    z-index: 200;
+    background-color:bisque;
+    color: white;
+}
