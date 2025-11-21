@@ -102,16 +102,19 @@ body{
     opacity: 0;
 }
 
-.tarjeta-descripcion a{
+.tarjeta p{
     color: #ffffff;              /* visible sobre el fondo oscuro */
     font-weight: bold;        /* negrita */
     text-decoration: none;
     display: block;
     padding: 8px 0;           /* un poco más de área clicable */
-    font-size: 1.1em;         /* más grande y visible */
+    font-size: 1.1em;  
+    background-color: rgba(5, 63, 44, 0.589); 
+    text-align: center;
 }
 
 
 .p{
    text-align: center;
+   
 }
