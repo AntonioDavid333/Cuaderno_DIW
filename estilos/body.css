@@ -1,0 +1,7 @@
+body{
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: 10vh 1fr 1fr;
+}

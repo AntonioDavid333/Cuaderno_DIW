@@ -1,0 +1,38 @@
+header{
+    grid-area: header;
+    background: linear-gradient(90deg,rgb(64, 190, 39), green);
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.781);
+    border-bottom: rgb(182, 255, 65) solid 5px;
+}
+header>div{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg,rgb(183, 240, 109), rgb(141, 209, 63));
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* padding: 1em; */
+}
+nav{
+    
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.781);
+}
+nav h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+}
+li a{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
