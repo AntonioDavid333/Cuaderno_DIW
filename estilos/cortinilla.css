@@ -37,6 +37,7 @@ input[type="checkbox"] {
 }
 
 .contenido-principal {
+    grid-area: main;
     text-align: center;
     margin: auto;
     opacity: 0;
