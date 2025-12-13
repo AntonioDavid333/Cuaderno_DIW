@@ -1,5 +1,6 @@
 header{
     grid-area: header;
+    height: 100%;
     background: linear-gradient(90deg,rgb(64, 190, 39), green);
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.781);
     border-bottom: rgb(182, 255, 65) solid 5px;
@@ -13,11 +14,11 @@ header>div{
     /* padding: 1em; */
 }
 nav{
-    min-height: 80px;
+    min-height: 60%;
     padding: 1em;
     display: flex;
     justify-content: space-around;
-    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.781);
+   /*  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.781); */
 }
 nav h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -41,5 +42,9 @@ nav li a:hover{
     color: rgb(255, 255, 143);
     font-size: 1.3em;
     cursor: pointer;
+}
+
+@media (max-width:500px){
+    
 }
 
