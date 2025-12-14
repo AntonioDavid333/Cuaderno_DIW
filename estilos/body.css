@@ -1,4 +1,5 @@
 body{
+    width: 100vw;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -7,5 +8,11 @@ body{
     grid-template-areas: "header"
     "main"
     "footer";
-    grid-template-rows: 10vh 1fr 10vh;
+    grid-template-rows: auto 1fr auto;
+}
+@media (max-width: 620px){
+    main{
+        width: 100%;
+    }
+
 }
