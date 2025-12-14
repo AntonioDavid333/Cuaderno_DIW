@@ -1,17 +1,17 @@
 /*EJERCICIO 6.1*/
 
-body{
+/* body{
     background-color: black;
     width: 100vw;
     height: 100vh;
     text-align: center;
-}
+} */
 article{
     margin-top: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    min-height:500px;
     text-align: center;
     margin: auto;
 
@@ -21,21 +21,21 @@ article{
     justify-content: center;
     align-items: center;
     background-color: red;
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    animation: latir ease-in-out 2s infinite ;
+    animation: latir ease-in 2s infinite alternate ;
     
 }
-.latido2{
+/* .latido2{
     background-color: red;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     opacity: 0.8;
     border-radius: 50%;
-    animation: latir ease-in-out 2s infinite ;
+    animation: latir2 ease-in-out 2s infinite ;
 
-}
+} */
 
 @keyframes latir{
     0%{
@@ -46,7 +46,18 @@ article{
     100%{
         opacity: 0;
         transform: scale(1.5);
+        box-shadow: 0 0 5px 20px rgba(255, 0, 0, 0.80);
 
+    }
+}
+
+@keyframes latir2 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
     }
 }
 

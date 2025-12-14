@@ -8,8 +8,8 @@ body{
     height: 100vh;
 
 }
-h1{
-    color: lightcoral;
+main>h1{
+    color: white;
 }
 p{
     color: white;
@@ -26,7 +26,7 @@ p{
 .foto{
     color: white;
     width: 25%;
-    background-color: rgb(38, 38, 38);
+    background-color: rgba(255, 83, 112, 0.849);
     padding: 1em;
     border-radius: 10px;
 }
@@ -74,6 +74,33 @@ img{
     filter: drop-shadow(1px 1px 5px rgb(117, 0, 0)) drop-shadow(-1px -1px 5px red);
     transition: filter ease-out 0.3s;
     
+}
+main{
+    grid-area: main;
+    /* background-color: rgba(255, 83, 112, 0.5); */
+}
+
+@media (max-width:620px){
+    #imagenes{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    box-sizing: border-box;
+    /* padding: 1em; */
+}
+.foto{
+    color: white;
+    width: 90%;
+    background-color: rgba(255, 83, 112, 0.849);
+    padding: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+} 
 }
 
 
