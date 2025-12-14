@@ -1,32 +1,37 @@
 
-body{
+/* body{
     background-color: lightgray;
     height: 100vh;
     width: 100vw;
     margin: 0;
-}
+} */
 /*EJERCICIO 2*/
-nav{
+#nav{
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
     align-items: center;
     padding: 0.5em;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(51, 51, 51);
     color: rgb(183, 255, 202);
+    overflow: auto;
 }
-nav> div{
+#nav> div{
     background-color: rgb(77, 77, 77);
     color: white;
     padding: 0.5em;
     margin: 0.2em;
 }
-nav> h3{
+#nav> h3{
     margin: 0.3em;
 }
 /*_____________________________________________________*/
 /*EJERCICIO 1*/
 
 #a1{
+    box-sizing: border-box;
+    width: 100vw;
     background-color: lightgray;
     border: 2px solid;
     gap: 1em;
@@ -35,6 +40,7 @@ nav> h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
 }
 #a1 div{
     background-color: lightcoral;
@@ -46,6 +52,8 @@ nav> h3{
 /*_____________________________________________________*/
 /*EJERCICIO 3*/
 #a3{
+    width: 100vw;
+    height: 20vh;
     box-sizing: border-box;
     /* height: 15%; */
     margin: 1em;
@@ -57,6 +65,7 @@ nav> h3{
     padding: 1em;
 }
 #a3 div{
+    box-sizing: border-box;
     background-color: white;
     height: 100%;
     flex-grow: 1;
@@ -64,11 +73,15 @@ nav> h3{
     border-radius: 8px;
     padding: 1em;
 }
+#a3 h3{
+    margin: auto;
+}
 
 /*_____________________________________________________*/
 /*EJERCICIO 4*/
 
 #a4{
+    margin-top: 3em;
     margin: auto;
     border:  solid;
     display: flex;
@@ -149,6 +162,38 @@ button{
 }
 #m9{
     order: 9;
+}
+
+@media(max-width: 640px){
+    #a3{
+    width: 100vw;
+    height: auto;
+    /* height: 20vh; */
+    box-sizing: border-box;
+    /* height: 15%; */
+    /* margin: 1em; */
+    background-color: lightgray;
+    border: 2px solid rgb(95, 222, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    padding: 1em;
+    }
+    #a3 div{
+        box-sizing: border-box;
+        background-color: white;
+        height: 100%;
+        flex-grow: 1;
+        border: 1px rgb(255, 113, 142) solid;
+        border-radius: 8px;
+        padding: 1em;
+    }
+    #a4{
+        margin: 0;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
 }
 
 
