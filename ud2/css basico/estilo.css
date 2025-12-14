@@ -1,11 +1,11 @@
-body{
+/* body{
     padding-top: 10%;
     background-color: #F2F1E8;
     font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
     text-align: center;
-}
+} */
 
-h1, h2{
+main>h1, h2{
     color: #00BAD8;
 }
 legend{
@@ -27,12 +27,12 @@ fieldset{
     text-align:  center;
     padding: auto;
     margin: auto;
-    width: 20%;
+    width: 50%;
     border-color: #006F83;
     border-style: dashed;
 }
 
-div{
+main>div{
     color:#041022;
     margin: 2em 2em;
 }

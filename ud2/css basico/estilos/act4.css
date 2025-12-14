@@ -1,4 +1,4 @@
-body{
+/* body{
     
     
     justify-content: space-between;
@@ -7,15 +7,16 @@ body{
     height: 100vh;
     background-color: lightgray;
     margin: 0;
-}
+} */
 #c1{
     width: 60vw;
     height: 70vh;
     background-color:white;
     position: relative;
     z-index: 0;
-    top: 8%;
-    left: 20%;
+    top: 0;
+    left: 0;
+    margin: auto;
 }
 #c2{
     height: 75%;
@@ -70,7 +71,7 @@ body{
     z-index: 5;
     border: 1px solid;
 }
-footer{
+/* footer{
     margin: 0;
     width: 100vw;
     height: 50px;
@@ -80,4 +81,4 @@ footer{
    
 
 
-}
+} */

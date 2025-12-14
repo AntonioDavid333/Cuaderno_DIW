@@ -80,6 +80,7 @@ ul::marker{
 }
 article{
     box-sizing: border-box;
+    overflow: auto;
     width: 80%;
     margin: 1em;
     border-radius: 15px;
@@ -100,3 +101,18 @@ article{
     background-color:bisque;
     color: white;
 } */
+@media (max-width: 620px){
+    /* main{
+        width: 100%;
+        padding: 1em;
+    } */
+    article{
+        min-width: 100%;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
