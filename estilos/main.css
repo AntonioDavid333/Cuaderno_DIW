@@ -4,4 +4,8 @@ main{
     
     padding: 1em;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
