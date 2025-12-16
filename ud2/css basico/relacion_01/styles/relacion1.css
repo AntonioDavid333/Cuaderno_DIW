@@ -207,13 +207,13 @@ th, td {
 #a3 p strong:first-of-type{
     color: #64452e;
     font-size: 1.5em;
-    font-style: italic;
+    /* font-style: italic; */
 
 }
 #a3 p em:first-of-type{
     color: #A28658;
     font-size: 1.5em;
-    font-style: italic;
+  /*   font-style: italic; */
 
 }
 
@@ -256,7 +256,7 @@ th, td {
 }
 #a8 ol ul li{
     color: #A28658;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /*EJERCICIO 09*/
@@ -469,7 +469,7 @@ background-color: #fff;
     text-indent: 2em;
     line-height: 1.8;
     text-align: justify;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /*EJERCICIO 20*/
@@ -569,7 +569,7 @@ background-color: #fff;
   box-shadow: #aaa 1px 1px 5px;    
 }
 #a23 table tbody tr td{
-    font-style: italic;
+    /* font-style: italic; */
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -673,7 +673,7 @@ font-weight: bold;
 }
 #a28 table tbody tr td{
     font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 /*EJERCICIO 29*/
@@ -696,7 +696,7 @@ font-weight: bold;
     color: #dcdbdb;
     text-decoration: none;
     font-weight: bold;
-    font-style: italic;
+    /* font-style: italic; */
     
 }
 #a29 div ul li a:active{

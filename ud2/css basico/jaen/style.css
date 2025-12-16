@@ -185,3 +185,17 @@ section {
     /* TU CÓDIGO AQUÍ */
     position: static;
 }
+
+.back{
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(128, 128, 128, 0.61);
+    position: fixed;
+    top: 3em;
+    left: 1em;
+    border: lightgray 4px solid;
+    z-index: 100;
+    cursor: pointer;
+}
