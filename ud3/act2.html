@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad02_Tema3</title>
+    <link rel="icon" type="image/png" href="../icono/icono.png">
+    <link rel="stylesheet" href="../estilos/act2.css">
+
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <nav>
+            <label for="menu-toggle" class="menu-button">Menú</label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../ud1/index.html">Unidad 1</a></li>
+                <li><a href="../ud2/index.html">Unidad 2</a></li>
+                <li><a>Unidad 3</a></li>
+                <li><a>Unidad 4</a></li>
+                <li><a>Unidad 5</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>ACTIVIDAD 2: Ejercicios sobre accesibilidad</h1>
+        </div>
+    </header>
+    <main>
+        
+        <h2>Actividad 2: Ejercicios sobre accesibilidad</h2>
+
+        <article>
+            <div>
+                <h3>1. Combinación de colores</h3>
+                <ul>
+                    <li>Tus compañeros tienen dudas sobre la combinación de color más accesible entre las siguientes opciones:
+                        <ul>
+                            <li>Color de texto: #1F1FFF y color de fondo: #A3A3A3</li>
+                            <li>Color de texto: #000047 y color de fondo: #B8B8B8</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <img src="imagenes/colors1.png">
+            <img src="imagenes/colors2.png">
+            <ul>
+                <li>La segunda opción (#000047 sobre #B8B8B8) es la más accesible, ya que cumple con el criterio AA para Texto Normal y AAA para Texto Grande, lo cual es el mínimo recomendado (AA).</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>2. Subtítulos en los vídeos</h3>
+                <ul>
+                    <li>¿Qué tres tipos de subtítulos existen?</li>
+                    <li>¿Cuáles debemos utilizar para que un vídeo sea accesible?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Tipos de subtítulos: Subtítulos para sordos (SDH), subtítulos abiertos (Open Captions) y subtítulos cerrados (Closed Captions).</li>
+                <li>Debemos utilizar los Subtítulos Cerrados (Closed Captions - CC), ya que el usuario puede activarlos o desactivarlos.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>3. Deshabilitar imágenes y JavaScript</h3>
+                <ul>
+                    <li>¿Para qué sirve deshabilitar las imágenes y el JavaScript en una web?</li>
+                    <li>¿Cómo podemos hacerlo?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Deshabilitar **imágenes** sirve para comprobar que todas tienen un texto alternativo correcto, beneficiando a usuarios que acceden sin imágenes (ej. en navegadores de solo texto).</li>
+                <li>Deshabilitar **JavaScript** sirve para comprobar que la página sigue siendo funcional sin él, ya que algunos usuarios pueden tenerlo deshabilitado.</li>
+                <li>Se puede deshabilitar mediante extensiones de navegador o usando las DevTools (herramientas de desarrollador).</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>4. Idioma</h3>
+                <ul>
+                    <li>Si una web está en español, ¿cómo debemos indicarlo para que sea accesible?</li>
+                    <li>¿Y si una parte del texto está en inglés?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Para el idioma principal: Se indica en la etiqueta `<html>` con el atributo `lang="es"`.</li>
+                <li>Para un cambio de idioma en una parte del texto: Se indica en la etiqueta que contiene el texto en inglés con el atributo `lang="en"` (ej. `<p lang="en">This is a paragraph</p>`).</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>5. Texto alternativo en las imágenes</h3>
+                <ul>
+                    <li>¿Qué información debe contener el texto alternativo en el siguiente caso: La imagen muestra el logo de una marca de ropa que se llama "Vintage Clothes"?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>El texto alternativo debe ser conciso y transmitir el propósito de la imagen.</li>
+                <li>Un buen ejemplo es: "Logotipo de Vintage Clothes".</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>6. Nivel de conformidad de los proyectos</h3>
+                <ul>
+                    <li>¿Qué niveles de conformidad existen en WCAG?</li>
+                    <li>¿Cuál debemos cumplir en nuestros proyectos?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Existen tres niveles de conformidad: A (Básico), AA (Intermedio) y AAA (Avanzado).</li>
+                <li>El nivel que se debe cumplir es el **AA**, ya que es el estándar más común y el mínimo legal en muchos países.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>7. Separación del estilo y la estructura</h3>
+                <ul>
+                    <li>¿Por qué es importante separar el estilo (CSS) de la estructura (HTML)?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Por motivos de **accesibilidad**: Permite que los dispositivos de asistencia (como los lectores de pantalla) interpreten correctamente el contenido sin que la presentación (CSS) cause confusiones.</li>
+                <li>Por motivos de **mantenimiento**: Facilita la edición de estilos y estructura por separado.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>8. Anidamiento de los encabezados</h3>
+                <ul>
+                    <li>¿Qué es el anidamiento de los encabezados y cómo debemos utilizarlos?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>El **anidamiento** es la jerarquía que debe existir entre los encabezados, siguiendo una estructura lógica: `<h1>` para el título principal, `<h2>` para secciones, `<h3>` para subsecciones, y así sucesivamente.</li>
+                <li>**Uso correcto:** Nunca se debe saltar un nivel (ej. de `<h1>` a `<h3>`) para asegurar que el lector de pantalla construye correctamente el índice del documento.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>9. Web maquetada mediante tablas</h3>
+                <ul>
+                    <li>¿Es accesible una web maquetada completamente mediante tablas? ¿Por qué?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>No, una web maquetada solo con tablas no es accesible.</li>
+                <li>**Razón:** Los lectores de pantalla interpretan las tablas como datos estructurados, no como un diseño visual, lo que desorienta al usuario. Deben usarse etiquetas semánticas y de estructura como `<div>`, `header`, `nav`, etc..</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>10. CAPTCHA</h3>
+                <ul>
+                    <li>¿Cómo podemos hacer accesible un CAPTCHA?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>Se debe ofrecer una alternativa al CAPTCHA visual.</li>
+                <li>Alternativas: CAPTCHA de **audio** (el usuario escucha los caracteres) o **reCAPTCHA invisible** de Google.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>11. Atributo accesskey</h3>
+                <ul>
+                    <li>¿Para qué sirve el atributo `accesskey`?</li>
+                    <li>¿Qué inconvenientes tiene su uso?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>**Función:** Define una combinación de teclas para acceder rápidamente a un elemento (ej. un enlace).</li>
+                <li>**Inconvenientes:** Puede interferir con los atajos de teclado del sistema operativo o del navegador, lo que puede causar problemas de usabilidad.</li>
+            </ul>
+        </article>
+
+        <article>
+            <div>
+                <h3>12. Atributo tabindex</h3>
+                <ul>
+                    <li>¿Para qué sirve el atributo `tabindex`?</li>
+                    <li>¿Cómo podemos utilizarlo correctamente?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>**Función:** Permite modificar el orden de tabulación de los elementos enfocables.</li>
+                <li>**Uso correcto:**
+                    <ul>
+                        <li>`tabindex="0"`: Incluye un elemento en el orden de tabulación normal (ej. para hacer un `div` enfocable).</li>
+                        <li>`tabindex="-1"`: Excluye un elemento de la tabulación normal, pero permite enfocarlo mediante código JavaScript.</li>
+                    </ul>
+                </li>
+                <li>**Uso incorrecto:** Valores positivos (ej. `tabindex="1"`) que fuerzan un orden de tabulación no lógico y dificultan el mantenimiento.</li>
+            </ul>
+        </article>
+        
+        <article>
+            <div>
+                <h3>13. Controles del formulario</h3>
+                <ul>
+                    <li>¿Cómo etiquetarías correctamente los controles del siguiente formulario? `<label>Nombre:</label> <input type="text" name="textfield" />`</li>
+                    <li>¿Cómo haríamos accesibles los inputs que no tienen un label asociado?</li>
+                </ul>
+            </div>
+            <div>Solución:</div>
+            <ul>
+                <li>**Etiquetado correcto (Opción 1: `for` e `id`):** `<label for="nombre">Nombre:</label><input type="text" id="nombre" name="textfield" />`</li>
+                <li>**Etiquetado correcto (Opción 2: Anidado):** `<label>Nombre: <input type="text" name="textfield" /></label>`</li>
+                <li>**Inputs sin label:** Se debe usar el atributo `aria-label` para proporcionar una descripción accesible (ej. `<input type="text" name="textfield" id=”textfield” aria-label=”campo de texto” />`).</li>
+            </ul>
+        </article>
+
+
+    </main>
+    <footer>
+        </footer>
+</body>
+</html>
