@@ -59,15 +59,18 @@
             <div>
                 <h3>2. Subtítulos en los vídeos</h3>
                 <ul>
-                    <li>¿Qué tres tipos de subtítulos existen?</li>
-                    <li>¿Cuáles debemos utilizar para que un vídeo sea accesible?</li>
+                    <li>Los subtítulos ponen nuestro contenido a disposición de una audiencia mayor, en la que se incluyen
+                    personas con problemas auditivos, o bien personas que hablan un idioma distinto al del vídeo.. ¿Cómo
+                    incluirías subtítulos en un vídeo? ¿se puede hacer directamente desde YouTube?</li>
                 </ul>
             </div>
             <div>Solución:</div>
-            <ul>
-                <li>Tipos de subtítulos: Subtítulos para sordos (SDH), subtítulos abiertos (Open Captions) y subtítulos cerrados (Closed Captions).</li>
-                <li>Debemos utilizar los Subtítulos Cerrados (Closed Captions - CC), ya que el usuario puede activarlos o desactivarlos.</li>
-            </ul>
+            <div>
+                Youtube tiene una opción de generación automática de subtítulos de video. No obstante también disponemos de una nueva tecnología llamada WebGPU que permite el uso total de la gpu de tu dispositivo conectado con inteligencia artificial que permite la transcripción correcta e instantánea de tu video-
+                aquí un link a una web realizada con esta tecnología para chrome que hace la transcripción automática de videos en tiempo real:
+
+            </div>
+            <img src="imagenes/webgpu.png">
         </article>
 
         <article>
@@ -75,29 +78,41 @@
                 <h3>3. Deshabilitar imágenes y JavaScript</h3>
                 <ul>
                     <li>¿Para qué sirve deshabilitar las imágenes y el JavaScript en una web?</li>
-                    <li>¿Cómo podemos hacerlo?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>Deshabilitar **imágenes** sirve para comprobar que todas tienen un texto alternativo correcto, beneficiando a usuarios que acceden sin imágenes (ej. en navegadores de solo texto).</li>
-                <li>Deshabilitar **JavaScript** sirve para comprobar que la página sigue siendo funcional sin él, ya que algunos usuarios pueden tenerlo deshabilitado.</li>
-                <li>Se puede deshabilitar mediante extensiones de navegador o usando las DevTools (herramientas de desarrollador).</li>
+                <li>Se puede ocultar fácilmente las imágenes de las páginas web mediante la extensión Ocultar imágenes disponible en chrome.
+                Esta extensión desplegará un icono junto a la barra de navegación que al pulsarlo oculta automáticamente todas las imágenes de un sitio web.
+
+                Para deshabilitar el Javascript de una página web, hay que ir a Herramientas de desarrolladores de Chrome.
+                En el menú de comandos escribimos javascript hasta que aparezca la opción deshabilitar javascript. Pulsaremos Enter para ejecutar y se deshabilitará el javascript.
+                También se puede hacer accediendo a configuración en Chrome, Privacidad y seguridad, Configuración de sitios y haciendo click en javascript. Se puede pulsar sobre la opción No permitir que los sitios usen javascript para desactivarlo de todas las páginas web
+                </li>
+                
             </ul>
         </article>
 
         <article>
             <div>
                 <h3>4. Idioma</h3>
+                El marcador de idioma beneficia a todos los usuarios:
                 <ul>
-                    <li>Si una web está en español, ¿cómo debemos indicarlo para que sea accesible?</li>
-                    <li>¿Y si una parte del texto está en inglés?</li>
+                    <li>Facilita la lectura de los lectores de pantalla y síntesis de voz baille</li>
+                    <li>Los motores de búsqueda identifican los contenidos del idioma deseado</li>
+                    <li>Se utiliza para cambiar la voz en la pronunciación de un texto en otro idioma, etc</li>
                 </ul>
+                ¿Cómo indicarías el idioma de una web? ¿y el idioma de una palabra concreta, el de una etiqueta de cita o
+                el de una etiqueta blockquote? ¿qué harías para indicar el idioma de un enlace?
             </div>
             <div>Solución:</div>
             <ul>
-                <li>Para el idioma principal: Se indica en la etiqueta `<html>` con el atributo `lang="es"`.</li>
-                <li>Para un cambio de idioma en una parte del texto: Se indica en la etiqueta que contiene el texto en inglés con el atributo `lang="en"` (ej. `<p lang="en">This is a paragraph</p>`).</li>
+                <li>Para indicar correctamente el idioma de una web, tendría siempre habilitado un icono en una encima del header o nav con la bandera del país de idioma junto con el nombre del país al lado y con la posibilidad de poder cambiarlo según las necesidades del cliente.
+                A su vez, para indicar el idioma en una cita o blockquote, emplearía la etiqueta <abbr>, la cual hace aclaraciones sobre palabras o citas. Para un usuario es tan fácil como poner el cursor encima de la palabra para que aparezca una anotación de la palabra o texto que se quiere aclarar.
+                A su vez, las etiquetas tienen un atributo llamado lang para indicar el idioma del mismo. por ejemplo:
+                </li>
+                <img src="imagenes/lang.png">
+                <li>Importante, a pesar de usar el atributo y las etiquetas, indicar el idioma al lado del enlace</li>
             </ul>
         </article>
 
@@ -105,13 +120,18 @@
             <div>
                 <h3>5. Texto alternativo en las imágenes</h3>
                 <ul>
-                    <li>¿Qué información debe contener el texto alternativo en el siguiente caso: La imagen muestra el logo de una marca de ropa que se llama "Vintage Clothes"?</li>
+                    <li>¿Le pondrías un texto alternativo al logotipo de una empresa? ¿Qué texto alternativo? ¿y a una imagen decorativa?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>El texto alternativo debe ser conciso y transmitir el propósito de la imagen.</li>
-                <li>Un buen ejemplo es: "Logotipo de Vintage Clothes".</li>
+                <li>A un logotipo siempre es conveniente acompañarlo de un texto alternativo breve o eslogan descriptivo que acompañe a la imágen. Esto no tan solo es positivo para la accesibilidad, sino como estrategia de comunicación que hace que los clientes recuerden con mayor facilidad la marca. Este texto alternativo le puede indicar al usuario con dificultades para visualizar, que se encuentra en una web de dicha marca.
+
+                Aunque cabe recalcar que no cualquier texto es válido, solo un texto corto de un par de palabras que encajen con lo que el logo quiere representar, con el nombre de la empresa o la marca en cuestión.
+
+                En cuanto a una imágen decorativa, lo más aconsejable es no incluirlas para hacer nuestra web más ligera y accesible, pero en caso de introducirla, lo mejor es no acompañarla de texto para no sobrecargar con información innecesaria.
+                </li>
+                
             </ul>
         </article>
 
@@ -119,14 +139,14 @@
             <div>
                 <h3>6. Nivel de conformidad de los proyectos</h3>
                 <ul>
-                    <li>¿Qué niveles de conformidad existen en WCAG?</li>
-                    <li>¿Cuál debemos cumplir en nuestros proyectos?</li>
+                    <li>Estos son los distintos niveles de conformidad sobre accesibilidad disponibles: ¿Qué
+                    nivel de conformidad exigirías para un sitio web muy complejo?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
                 <li>Existen tres niveles de conformidad: A (Básico), AA (Intermedio) y AAA (Avanzado).</li>
-                <li>El nivel que se debe cumplir es el **AA**, ya que es el estándar más común y el mínimo legal en muchos países.</li>
+                <li>El nivel que se debe cumplir es el AA, ya que es el estándar más común y el mínimo legal en muchos países.</li>
             </ul>
         </article>
 
@@ -139,22 +159,33 @@
             </div>
             <div>Solución:</div>
             <ul>
-                <li>Por motivos de **accesibilidad**: Permite que los dispositivos de asistencia (como los lectores de pantalla) interpreten correctamente el contenido sin que la presentación (CSS) cause confusiones.</li>
-                <li>Por motivos de **mantenimiento**: Facilita la edición de estilos y estructura por separado.</li>
-            </ul>
+                <li>Es importante separar los estilos del HTML principalmente, por limpieza , ya que si incluimos los estilos dentro de los elementos HTML, el lector puede verse confundido ante tantos datos juntos.
+                Además, es importante también por mantenimiento, ya que unos estilos separados se hacen más fáciles de actualizar y modificar sin tener que alterar el HTML. 
+                Otra ventaja de separar los estilos, es la posibilidad de poder preparar hojas de estilo diferentes, haciendo la página más personalizable. También es importante considerar la posibilidad de hacer una web responsive, que desde los estilos del HTML no se puede lograr.
+                </li>
+                
         </article>
 
         <article>
             <div>
                 <h3>8. Anidamiento de los encabezados</h3>
                 <ul>
-                    <li>¿Qué es el anidamiento de los encabezados y cómo debemos utilizarlos?</li>
+                    <li>Te han encargado que mejores la accesibilidad de un sitio web que tiene graves
+                    problemas de estructuración en su contenido. Esta web no utiliza elementos semánticos
+                    ni tiene los encabezados anidados de forma correcta: h1, h2, h3. En su lugar dispone de
+                    encabezados desestructurados: h1, h3, h5 e incluso encabezados creados con divs en
+                    lugar de usar el elemento semántico correspondiente. ¿Cómo podrías mejorar este
+                    diseño? ¿Qué herramienta utilizarías para comprobar el anidamiento de los
+                    encabezados?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>El **anidamiento** es la jerarquía que debe existir entre los encabezados, siguiendo una estructura lógica: `<h1>` para el título principal, `<h2>` para secciones, `<h3>` para subsecciones, y así sucesivamente.</li>
-                <li>**Uso correcto:** Nunca se debe saltar un nivel (ej. de `<h1>` a `<h3>`) para asegurar que el lector de pantalla construye correctamente el índice del documento.</li>
+                <li>Para mejorar el diseño de esa página web, reduciría los h1 a uno por página y emplearía correctamente los encabezados por orden jerárquico de apartados. Sustituiría los divs por sus títulos o etiquetas correspondientes para favorecer su identificación, y me encargaría de la correcta maquetación de la página web. Es decir, distribuiría la página entre sus componentes estándar: header, nav, aside , main, footer, section, article, etc, que hacen una buena estructuración y ayuda a reconocer mejor sus partes.
+                Una buena herramienta para comprobar el correcto anidamiento de una web y su accesibilidad, es la extensión para Chrome AxeDevTools, la cual hace un escaneo de la estructura web ayudando a su correcta estructuración.
+                </li>
+                <img src="imagenes/axedevstool.png">
+                
             </ul>
         </article>
 
@@ -162,13 +193,18 @@
             <div>
                 <h3>9. Web maquetada mediante tablas</h3>
                 <ul>
-                    <li>¿Es accesible una web maquetada completamente mediante tablas? ¿Por qué?</li>
+                    <li>Te han encargado que mejores la accesibilidad de un sitio web que se encuentra
+                    maquetado mediante tablas. Su contenido se encuentra representado de la
+                    siguiente forma:</li>
                 </ul>
+                <img src="imagenes/table.png">
             </div>
             <div>Solución:</div>
             <ul>
-                <li>No, una web maquetada solo con tablas no es accesible.</li>
-                <li>**Razón:** Los lectores de pantalla interpretan las tablas como datos estructurados, no como un diseño visual, lo que desorienta al usuario. Deben usarse etiquetas semánticas y de estructura como `<div>`, `header`, `nav`, etc..</li>
+                La página consta de varios errores en cuanto a accesibilidad:
+                <li>En primer lugar, la cabecera no está diferenciada como procede, sino que está representada con un tr y un td normal. En su lugar, sería recomendable incluir la cabecera en un thead e incluir las celdas en la semántica correcta de una cabecera de tabla, que es td.</li>
+                <li>En segundo lugar, el cuerpo de la tabla debería incorporarse en su correspondiente tbody, para mantener la semántica adecuada.</li>
+                <li>Por último, el footer también debe estar incluido en su tfoot para diferenciarse del resto de la estructura.</li>
             </ul>
         </article>
 
@@ -176,13 +212,17 @@
             <div>
                 <h3>10. CAPTCHA</h3>
                 <ul>
-                    <li>¿Cómo podemos hacer accesible un CAPTCHA?</li>
+                    <li>¿Qué alternativas hay al uso de un CAPTCHA? ¿Cómo es el nuevo reCAPTCHA v3
+                    de Google y qué mejoras trae?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>Se debe ofrecer una alternativa al CAPTCHA visual.</li>
-                <li>Alternativas: CAPTCHA de **audio** (el usuario escucha los caracteres) o **reCAPTCHA invisible** de Google.</li>
+                <li>Existe una alternativa llamada honeypots que consiste en un campo invisible a humanos que solo pueden ver los bots y por tanto, lo rellenan y al mandar el formulario queda claro que se trata de un bot al llegar este campo relleno.
+                El nuevo reCAPTCHA v3 de Google es más accesible ya que no es visible para el usuario pero hace efectiva la autentificación. El usuario no debe cumplimentar ningún puzzle visual ni nada, se le asiga a cada usuario una puntuación de 0 a 1 que indica si es muy probable o no que el usuario sea un bot para poder gestionar el acceso en torno a este dato proporcionado.Analizan el comportamiento del usuario en el flujo: login, formularios, etc para asignar la puntuación. Se importa en javaScript mediante el siguiente código en el Script:
+                </li>
+                <img src="imagenes/captcha.png">
+                
             </ul>
         </article>
 
@@ -190,14 +230,16 @@
             <div>
                 <h3>11. Atributo accesskey</h3>
                 <ul>
-                    <li>¿Para qué sirve el atributo `accesskey`?</li>
-                    <li>¿Qué inconvenientes tiene su uso?</li>
+                    <li>¿Para qué usarías el atributo acceskey?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>**Función:** Define una combinación de teclas para acceder rápidamente a un elemento (ej. un enlace).</li>
-                <li>**Inconvenientes:** Puede interferir con los atajos de teclado del sistema operativo o del navegador, lo que puede causar problemas de usabilidad.</li>
+                <li>Accesskey se emplea para asignar en HTML un atajo de teclado con Alt a una acción de HTML. Por ejemplo, aplicar el atajo alt+s a un botón (s de send) para enviar un formulario. Es tan fácil de emplear como escribir accesskey=”s” dentro de la etiqueta HTML del elemento.
+
+                Esta es una herramienta muy poderosa para la accesibilidad que se puede emplear facilitando las tareas a alguien con dificultades de navegación. Se podría emplear en enlaces por ejemplo, inputs, y demás elementos para acudir directamente al elemento o acción referenciados
+                </li>
+                
             </ul>
         </article>
 
@@ -205,20 +247,19 @@
             <div>
                 <h3>12. Atributo tabindex</h3>
                 <ul>
-                    <li>¿Para qué sirve el atributo `tabindex`?</li>
-                    <li>¿Cómo podemos utilizarlo correctamente?</li>
+                    <li>¿Para qué usarías el atributo tabindex? ¿Qué valor puedes darle a tabindex para
+                    eliminar un el elemento del orden de pestañas?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>**Función:** Permite modificar el orden de tabulación de los elementos enfocables.</li>
-                <li>**Uso correcto:**
-                    <ul>
-                        <li>`tabindex="0"`: Incluye un elemento en el orden de tabulación normal (ej. para hacer un `div` enfocable).</li>
-                        <li>`tabindex="-1"`: Excluye un elemento de la tabulación normal, pero permite enfocarlo mediante código JavaScript.</li>
-                    </ul>
+                
+                <li>El atributo tabindex se emplea para establecer en el html, el orden de tabulación. Es útil para ayudar al usuario a navegar por la web sin necesidad de usar el ratón, solo tabulando sobre la misma. 
+
+                Es importante establecer mediante este atributo un correcto orden de tabulación para impedir que el usuario se pierda en la navegación.
+                Asignar un orden se hace mediante un número entero dentro de la etiqueta. por ejemplo: &lt input tabindex=2 &gt
+                Si en algún momento queremos excluir un elemento del orden de tabulación, tendremos que asignar un valor negativo, por ejemplo: &lt input tabindex=-1 &gt
                 </li>
-                <li>**Uso incorrecto:** Valores positivos (ej. `tabindex="1"`) que fuerzan un orden de tabulación no lógico y dificultan el mantenimiento.</li>
             </ul>
         </article>
         
@@ -226,15 +267,23 @@
             <div>
                 <h3>13. Controles del formulario</h3>
                 <ul>
-                    <li>¿Cómo etiquetarías correctamente los controles del siguiente formulario? `<label>Nombre:</label> <input type="text" name="textfield" />`</li>
+                    <li>¿Cómo etiquetarías correctamente los controles del siguiente formulario?</li>
+                    <li>
+                    &ltlabel&gtNombre:&lt/label&gt<br>
+                    &ltinput type="text" name="textfield" /&gt<br></li>
                     <li>¿Cómo haríamos accesibles los inputs que no tienen un label asociado?</li>
                 </ul>
             </div>
             <div>Solución:</div>
             <ul>
-                <li>**Etiquetado correcto (Opción 1: `for` e `id`):** `<label for="nombre">Nombre:</label><input type="text" id="nombre" name="textfield" />`</li>
-                <li>**Etiquetado correcto (Opción 2: Anidado):** `<label>Nombre: <input type="text" name="textfield" /></label>`</li>
-                <li>**Inputs sin label:** Se debe usar el atributo `aria-label` para proporcionar una descripción accesible (ej. `<input type="text" name="textfield" id=”textfield” aria-label=”campo de texto” />`).</li>
+                <li>
+                &lt;label for=”textfield” id=”textfield-label”&gt;Nombre:&lt;/label&gt; 
+                &lt;input type="text" name="textfield" id=”textfield” aria-labelledby=”textfield-label” /&gt</li>
+                
+                <li>En caso de que un input no tenga un &lt;label&gt; visible asociado, se debe usar el atributo `aria-label`, que permite establecer una etiqueta invisible que detectará el lector de pantalla:<br>
+                &lt;input type="text" name="textfield" id=”textfield” aria-label=”campo de texto” /&gt;</li>
+                
+    
             </ul>
         </article>
 
