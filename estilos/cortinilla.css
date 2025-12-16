@@ -61,4 +61,9 @@ input[type="checkbox"]:checked ~ .contenido-principal {
     transform: translateY(0);
 }
 
+@media (max-width: 640px){
+    .cortinilla{
+        filter: drop-shadow(200px 0px rgba(255, 41, 112, 0.8)) drop-shadow(0px 200px rgba(255, 41, 112, 0.8)) drop-shadow(-200px 0px rgba(71, 221, 40, 0.8)) drop-shadow(0px -200px rgba(71, 221, 40, 0.8));
+    }
+}
 
