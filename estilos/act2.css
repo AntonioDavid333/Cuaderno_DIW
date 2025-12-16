@@ -89,6 +89,11 @@ article{
     box-shadow: 3px 3px 6px 5px rgba(128, 128, 128, 0.76);
     
 }
+iframe{
+    margin: auto;
+    width: 80vw;
+    height: 60vh;
+}
 /* footer{
     border-radius: 5px;
     position: fixed;
@@ -113,6 +118,10 @@ article{
         width: 100%;
         text-align: center;
         box-sizing: border-box;
+    }
+    iframe{
+        max-width: 90vw;
+        max-height: 60vh
     }
 
 }
