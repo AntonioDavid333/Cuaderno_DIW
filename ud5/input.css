@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.card{
+    @apply p-8 shadow-md rounded-3xl w-sm m-auto mt-8 bg-white border-gray-500
+}
