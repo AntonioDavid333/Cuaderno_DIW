@@ -180,23 +180,23 @@ header.ud1 {
 
 /* Colores del botón menú móvil por unidad */
 @media (max-width: 620px) {
-    header.ud1 .menu-button {
+    .ud1 .menu-button {
         background-color: rgb(39, 120, 190);
     }
 
-    header.ud2 .menu-button {
+    .ud2 .menu-button {
         background-color: rgb(220, 100, 40);
     }
 
-    header.ud3 .menu-button {
+    .ud3 .menu-button {
         background-color: rgb(140, 50, 200);
     }
 
-    header.ud4 .menu-button {
+    .ud4 .menu-button {
         background-color: rgb(40, 150, 180);
     }
 
-    header.ud5 .menu-button {
+    .ud5 .menu-button {
         background-color: rgb(200, 50, 150);
     }
 }
