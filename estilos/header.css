@@ -138,43 +138,43 @@ header.ud1 {
     border-bottom: rgb(100, 180, 255) solid 5px;
 }
 
-header.ud1 > div {
+.ud1 > div {
     background: linear-gradient(90deg, rgb(150, 200, 250), rgb(100, 160, 230));
 }
 
-header.ud2 {
+.ud2 {
     background: linear-gradient(90deg, rgb(220, 100, 40), darkorange);
     border-bottom: rgb(255, 180, 100) solid 5px;
 }
 
-header.ud2 > div {
+.ud2 > div {
     background: linear-gradient(90deg, rgb(255, 200, 150), rgb(240, 160, 100));
 }
 
-header.ud3 {
+.ud3 {
     background: linear-gradient(90deg, rgb(140, 50, 200), purple);
     border-bottom: rgb(200, 130, 255) solid 5px;
 }
 
-header.ud3 > div {
+.ud3 > div {
     background: linear-gradient(90deg, rgb(220, 180, 255), rgb(180, 130, 230));
 }
 
-header.ud4 {
+.ud4 {
     background: linear-gradient(90deg, rgb(40, 150, 180), darkcyan);
     border-bottom: rgb(100, 220, 240) solid 5px;
 }
 
-header.ud4 > div {
+.ud4 > div {
     background: linear-gradient(90deg, rgb(150, 230, 240), rgb(100, 190, 210));
 }
 
-header.ud5 {
+.ud5 {
     background: linear-gradient(90deg, rgb(200, 50, 150), deeppink);
     border-bottom: rgb(255, 150, 200) solid 5px;
 }
 
-header.ud5 > div {
+.ud5 > div {
     background: linear-gradient(90deg, rgb(255, 180, 220), rgb(230, 130, 180));
 }
 
