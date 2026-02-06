@@ -42,10 +42,10 @@ nav li a{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 nav li a:hover{
-    color: rgb(255, 255, 143);
-    font-size: 1.3em;
+    color: yellow;
     cursor: pointer;
 }
 
@@ -128,3 +128,75 @@ nav li a:hover{
     
 }
 
+.actual {
+    color: yellow;
+}
+
+/* Colores específicos por unidad */
+header.ud1 {
+    background: linear-gradient(90deg, rgb(39, 120, 190), blue);
+    border-bottom: rgb(100, 180, 255) solid 5px;
+}
+
+header.ud1 > div {
+    background: linear-gradient(90deg, rgb(150, 200, 250), rgb(100, 160, 230));
+}
+
+header.ud2 {
+    background: linear-gradient(90deg, rgb(220, 100, 40), darkorange);
+    border-bottom: rgb(255, 180, 100) solid 5px;
+}
+
+header.ud2 > div {
+    background: linear-gradient(90deg, rgb(255, 200, 150), rgb(240, 160, 100));
+}
+
+header.ud3 {
+    background: linear-gradient(90deg, rgb(140, 50, 200), purple);
+    border-bottom: rgb(200, 130, 255) solid 5px;
+}
+
+header.ud3 > div {
+    background: linear-gradient(90deg, rgb(220, 180, 255), rgb(180, 130, 230));
+}
+
+header.ud4 {
+    background: linear-gradient(90deg, rgb(40, 150, 180), darkcyan);
+    border-bottom: rgb(100, 220, 240) solid 5px;
+}
+
+header.ud4 > div {
+    background: linear-gradient(90deg, rgb(150, 230, 240), rgb(100, 190, 210));
+}
+
+header.ud5 {
+    background: linear-gradient(90deg, rgb(200, 50, 150), deeppink);
+    border-bottom: rgb(255, 150, 200) solid 5px;
+}
+
+header.ud5 > div {
+    background: linear-gradient(90deg, rgb(255, 180, 220), rgb(230, 130, 180));
+}
+
+/* Colores del botón menú móvil por unidad */
+@media (max-width: 620px) {
+    header.ud1 .menu-button {
+        background-color: rgb(39, 120, 190);
+    }
+
+    header.ud2 .menu-button {
+        background-color: rgb(220, 100, 40);
+    }
+
+    header.ud3 .menu-button {
+        background-color: rgb(140, 50, 200);
+    }
+
+    header.ud4 .menu-button {
+        background-color: rgb(40, 150, 180);
+    }
+
+    header.ud5 .menu-button {
+        background-color: rgb(200, 50, 150);
+    }
+}
