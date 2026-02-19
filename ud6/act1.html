@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad01_Tema1</title>
+    <link rel="icon" type="image/png" href="../icono/icono.png">
+    <link rel="stylesheet" href="../estilos/act2.css">
+    
+    <link rel="stylesheet" href="../estilos/body.css">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="stylesheet" href="../estilos/footer.css">
+
+</head>
+<body>
+    <header class="ud6">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <nav>
+            <label for="menu-toggle" class="menu-button">Menú</label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../ud1/index.html">Unidad 1</a></li>
+                <li><a href="../ud2/index.html">Unidad 2</a></li>
+                <li><a href="../ud3/index.html">Unidad 3</a></li>
+                <li><a href="../ud4/index.html">Unidad 4</a></li>
+                <li><a  href="../ud5/index.html">Unidad 5</a></li>
+                <li><a class="actual" href="../ud6/index.html">Unidad 6</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1 class="text-2xl font-bold p-3">ACTIVIDAD 1: ejercicios sobre usabilidad</h1>
+        </div>
+    </header>
+    <main>
+        <a class="back" href="index.html">⬅️</a>
+        <h2>Actividad 01 -Texto</h2>
+        <article>
+            <p>
+                En la actividad de texto, nos encontramos con un texto con los tamaños de jerarquía desiguales, 
+                un interlineado inadecuado, un excesivo uso de mayúsculas, 
+                así como un bajo contraste que no permite la buena legibilidad del texto 
+                y unos párrafos demasiado extensos.
+            </p>
+            <p>
+                Además, el enlace que se observa de “pinche aquí” no es descriptivo y 
+                aparece una lista sin elemento gráfico que la diferencie como lista.
+            </p>
+            <img src="imagenes/capt1.png">
+            <p>
+                Para mejorar la usabilidad del sitio, en primer lugar, 
+                cambié el color de fuente al negro y a blanco dentro del recuadro gris oscuro. 
+                Cambié la fuente actual por una tipografía legible con un tamaño de cuerpo de 16px 
+                y un interlineado de 24px para evitar la saturación visual. 
+            </p>
+            <p>
+                Eliminé las mayúsculas forzadas en los títulos para facilitar la lectura.
+            </p>
+            <p>
+                En el HTML, los párrafos extensos se dividieron en bloques de máximo 3 o 4 líneas 
+                y las acciones de ciberseguridad deben estructurarse como una lista 
+                sin ordenar para permitir un escaneo rápido.
+            </p>
+            <p>
+                Cambié el tamaño de uno de los párrafos que estaba extra-reducido a su tamaño normal.
+            </p>
+            <p>
+                Alteré las etiquetas de encabezados para abarcar desde el h1 hasta el h3 con tamaños entre 48px y 20px.
+            </p>
+            <p>
+                Finalmente, fué necesario sustituir el enlace "pinche aquí" por un texto descriptivo que indique claramente el destino al usuario.
+            </p>
+            <img src="imagenes/capt2.png">
+        </article>
+
+        <h2>Actividad 02 -Imágenes</h2>
+        <article>
+            <p>
+                En este ejercicio de imágenes nos encontramos con una imágen no optimizada y sin alt descriptivo.
+            </p>
+            <p>
+                También nos encontramos con un texto en imagen que no se diferencia bien 
+                al no contrastar adecuadamente con el fondo de la imagen.
+                Además, también es conveniente hacer algún ajuste de texto:
+            </p>
+            <img src="imagenes/capt3.png">
+            <p>
+                tras optimizar los tamaños de las imágenes, escribir los respectivos alt, 
+                contrastar correctamente el texto con imagen de fondo usando 
+                text-shadow además del color y de aplicar algunos ajustes de texto, 
+                así quedó nuestro HTML:
+            </p>
+            <img src="imagenes/capt4.png">
+        </article>
+
+        <h2>Actividad 03 -Formularios</h2>
+        <article>
+            <p>
+                En esta actividad nos encontramos con un formulario sin placeholders 
+                que ayuden al usuario a saber cómo rellenar los campos,
+                sin asteriscos en los campos obligatorios,
+            </p>
+            <p>
+                un botón no prominente que se distinga adecuadamente,
+                el envío de formulario no se notifica y 
+                además no es mobile first teniendo en cuenta los tamaños de móvil.
+
+            </p>
+            <p>
+                A todo esto hay que sumarle los problemas de texto 
+                anteriormente tratados como el tamaño de fuente
+            </p>
+            <img src="imagenes/capt5.png">
+            <p>
+                Los cambios realizados incluyen un pequeño código javascript que notifica 
+                del correcto envío del formulario al pulsar el botón de enviar, 
+                además de los ajustes de tamaños y la incorporación de elementos 
+                como asteriscos, placeholders y colores del botón
+            </p>
+            <p>
+                Toda la corrección se ha realizado primeramente en formato móvil 
+                para asegurarnos de que el diseño sea totalmente mobile first.
+            </p>
+            <img src="imagenes/capt6.png">
+        </article>
+
+        <h2>Actividad 04 -Tablas</h2>
+        <article>
+            <p>
+                En esta actividad nos encontramos no solo problemas propios de la tabla,
+                sino también problemas de enlace, tamaño de fuente y espaciado que también corregiremos.
+            </p>
+            <p>
+                En cuanto a la tabla, nos encontramos que no tiene límites colapsados para separar la información.
+            </p>
+            <p>
+                Vemos que no hay una distinción de registros por parte del color de fondo, ya que, de hecho, no hay color de fondo.
+            </p>
+            <p>
+                No hay padding ni márgen adecuado.
+            </p>
+            <p>
+                La tabla no ocupa todo el ancho disponible para ayudar a su correcta visualización y sea un diseño adaptativo no rígido.
+            </p>
+            <img src="imagenes/capt7.png">
+            <p>
+                En cuanto a la barra de navegación, opté por posicionarla encima de todo en color oscuro
+                y con enlaces claritos y visibles bien espaciados.
+                En general se estableció una altura de línea de 24px y un tamaño de texto mínimo de 16px.
+            </p>
+            <p>
+                la tabla recibió un ancho del 100% para ocupar todo el ancho de manera adaptativa 
+                y se puso un padding de 16px en cada celda, 
+                con el texto alineado a izquierda.
+            </p>
+            <p>
+                se puso un color de fondo diferente al encabezado, 
+                con un tamaño de fuente diferente y se definió un color diferente 
+                para filas pares e impares para facilitar la correcta lectura.
+            </p>
+            <p>
+                También se puso un borde colapsado para diferenciar correctamente cada campo.
+            </p>
+            <img src="imagenes/capt8.png">
+        </article>
+        
+    </main>
+    <footer>
+        <!-- <a href="index.html">Volver al índice</a> -->
+    </footer>
+</body>
+</html>
