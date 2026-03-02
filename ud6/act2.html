@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad01_Tema1</title>
     <link rel="icon" type="image/png" href="../icono/icono.png">
     <link rel="stylesheet" href="../estilos/act2.css">
-    
+
     <link rel="stylesheet" href="../estilos/body.css">
     <link rel="stylesheet" href="../estilos/header.css">
     <link rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="../estilos/footer.css">
 
 </head>
+
 <body>
     <header class="ud6">
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -24,7 +26,7 @@
                 <li><a href="../ud2/index.html">Unidad 2</a></li>
                 <li><a href="../ud3/index.html">Unidad 3</a></li>
                 <li><a href="../ud4/index.html">Unidad 4</a></li>
-                <li><a  href="../ud5/index.html">Unidad 5</a></li>
+                <li><a href="../ud5/index.html">Unidad 5</a></li>
                 <li><a class="actual" href="../ud6/index.html">Unidad 6</a></li>
             </ul>
         </nav>
@@ -34,46 +36,143 @@
     </header>
     <main>
         <a class="back" href="index.html">⬅️</a>
-        <h2>Estudio de la web de ZARA</h2>
-        <article>
-            <p>
-                
-            </p>
-            
-            <img src="imagenes/ZARA.png">
-            
-        </article>
         <h2>1. Análisis inicial</h2>
         <article>
-            
-            <img src="imagenes/capt1.png">
-            
-            <img src="imagenes/capt2.png">
+            <img src="imagenes/ZARA.png">
+            <p>
+                La vista principal de la web es muy poco intuitiva, es muy difícil para el usuario identificar las
+                funciones principales. No hay ningún tipo de feedback para el usuario, como efectos hover o
+                botones resaltados.
+            </p>
+
+            <p>
+                Además, ocupa demasiado espacio la galería de imágenes y no aportan nada ya que al
+                hacer click encima te redirige a la misma vista con distintas prendas, y ya, al tercer click, es
+                cuando te redirige a la prenda en concreto.
+            </p>
+
+            <p>Todo esto ocurre sin ningún tipo de guía para el usuario, por lo que el principio de visibilidad
+                del estado del sistema, control y libertad está completamente ignorado.</p>
+
+            <img src="imagenes/ZARA2.PNG">
+
+            <p>Esta vista tampoco mejora ya que sigue sin seguir ningún tipo de guía visual para el usuario a la hora de pasar el ratón por encima. Además de que, para ser una web de moda, el estilo de la web es demasiado simple y cutre.</p>
+
         </article>
 
         <h2>2. Pruebas a usuarios</h2>
         <article>
             
-            <img src="imagenes/capt3.png">
-            
+            <p>Como usuario simularé lo siguiente: "Encuentra una chaqueta de cuero negra, talla M,
+                añádela al carrito y llega hasta la pantalla donde se solicita el método de envío (sin realizar
+                el pago real)".
+            </p>
+            <img src="imagenes/ZARA3.PNG">
+
+            <p>
+                El primer error es tanto estético como funcional: cuando el usuario quiere pasar de la vista
+                principal a las secciones de ropa no importa a qué sección le de ya que todas mandan a la
+                vista de “Ver todo”
+            </p>
+
+            <img src="imagenes/ZARA4.PNG">
+
+            <p>Desde esta vista el usuario puede intuir que se encuentra dentro de la sección “Bomber”, sin embargo también podría entender que se encuentra en “Efecto piel”, esto genera ambigüedad y pérdida de tiempo.</p>
+            <img src="imagenes/ZARA5.PNG">
+            <img src="imagenes/ZARA6.PNG">
+
+            <p>Los elementos de la vista están demasiado separados y se desaprovecha mucho el espacio. La información importante (disponibilidad, precio y tallas) no se ven a simple vista y el carrito está un poco escondido. Este botón es muy sutil, no se ve rápidamente y no tiene un diseño genérico (forma de carrito).</p>
+            <p>Cuando intento comprar el producto desaparece y me redirige a una ventana de registro que ocupa todo el ancho, perdiendo de vista todo el proceso.</p>
+            <img src="imagenes/ZARA7.PNG">
+
         </article>
 
-        <h2>3. Soluciones implementadas</h2>
-        <article>
-            <img src="imagenes/capt5.png">
-            <img src="imagenes/capt6.png">
-        </article>
-
-        <h2>4. Resultados obtenidos</h2>
+        <h2>3. Análisis de elementos visuales</h2>
         <article>
             
-            <img src="imagenes/capt7.png">
-            <img src="imagenes/capt8.png">
+            <p>
+                Como ya he mencionado previamente, los botones de cada función, incluido el carrito de
+                compra, no destacan ni tienen colores llamativos. Tiene una pequeña ventana emergente
+                que te avisa de que el producto se ha agregado correctamente. La web solo usa los colores
+                blanco y negro, debería utilizar otros colores para los elementos emergentes o funciones
+                importantes.
+            </p>
+
+            <p>
+                Las tallas están ocultas hasta darle al botón de añadir y el precio se encuentra en el propio
+                título del producto, sin ningún tipo de distinción. Esto hace difícil verlo a simple vista
+            </p>
+            <img src="imagenes/ZARA8.PNG">
         </article>
-        
+
+        <h2>4. Evaluación histórica</h2>
+        <article>
+            <p>
+                Voy a hacer varias simulaciones buscando distintos elementos.
+                Primero he buscado algo sin ningún tipo de sentido: “Pepito”, la web actúa
+                correctamente y me indica que no hay resultados
+            </p>
+            <img src="imagenes/ZARA9.png">
+
+            <p>
+                Sin embargo, con otras búsquedas parece que el sistema intenta hacer algún tipo de
+                aproximación en función de color o palabras similares, el algoritmo de búsqueda es
+                un poco confuso porque a veces encuentra y otras veces no. Aquí he probado a
+                escribir “Lechuga”... parece que intenta asociar en función de las letras y no da
+                ningún resultado relevante.
+            </p>
+            <img src="imagenes/ZARA10.PNG">
+            <p>
+                Con otros productos existentes, la forma de saber si se encuentra disponible está en
+                el texto dentro del botón de añadir, no es muy intuitivo, simplemente cambia a
+                “Coming soon”. El usuario debería tener una referencia visual rápida de que el
+                producto no se encuentra disponible. De hecho, debería indicarlo en la vista previa,
+                actualmente no se sabe la disponibilidad de la prenda hasta que no entras a ver el
+                producto en detalle.
+
+            </p>
+            <img src="imagenes/ZARA11.PNG">
+        </article>
+
+
+        <h2>5. Propuesta de mejora</h2>
+        <article>
+            <p>
+                La página web incumple varios de los principios heurísticos de Jacob Nielsen y de
+                usabilidad en general. Tampoco utiliza colores que destaquen para ayudar al usuario a
+                saber en qué estado se encuentra del proceso.
+            </p>
+
+            <p>
+                Mis cambios específicos son:
+            </p>
+            <ul>
+                <li>Usar colores que destaquen las funcionalidades principales y los mensajes para el
+                    usuario. Por ejemplo, un color distinto (rojo) para ver la cantidad de productos del
+                    carrito u otro color para el botón de comprar, la información sobre tallas, precio y
+                    disponibilidad. Esta es la información que más necesita saber el usuario y debe ser
+                    destacada del resto.
+                </li>
+                <li>Visibilidad del estado del sistema y libertad para el usuario: la aplicación debería
+                    tener botones para navegar de forma más limpia entre las vistas, un botón de volver
+                    atrás, un menú siempre presenta y mensajes que avisen al usuario de forma más
+                    eficiente</li>
+                <li>Como extra: revisaría el diseño para optimizar la disposición de los elementos en la
+                    vista. Hay demasiado espacio desaprovechado y la vista desde móvil obliga al
+                    usuario a realizar demasiado scroll para encontrar ciertos productos e información.
+                </li>
+                <li>También intentaría abandona el estilo tan “moderno” y “estilizado” por uno que se
+                    centre más en la usabilidad, usando diseños y convenciones que ya están
+                    demostradas que funcionan, la impresión es que la web está diseñada para un
+                    público muy concreto y no para el público general
+                </li>
+            </ul>
+
+        </article>
     </main>
     <footer>
         <!-- <a href="index.html">Volver al índice</a> -->
     </footer>
 </body>
+
 </html>

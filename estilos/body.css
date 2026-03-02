@@ -12,7 +12,14 @@ body{
 }
 .back{
     text-decoration: none;
-    padding: 0.5em;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 1;
     background-color: white;
     border-radius: 50%;
     box-shadow: 5px 5px rgba(128, 128, 128, 0.61);
@@ -22,6 +29,31 @@ body{
     border: lightgray 4px solid;
     z-index: 100;
     cursor: pointer;
+}
+
+.back::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-top-color: #111;
+    border-right-color: #111;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: destacarBack 1.1s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes destacarBack{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 620px){
