@@ -186,27 +186,3 @@ header.ud1 {
 .ud6 > div {
     background: linear-gradient(90deg, rgb(255, 235, 160), rgb(250, 205, 90));
 }
-
-
-/* Colores del botón menú móvil por unidad */
-@media (max-width: 620px) {
-    .ud1 .menu-button {
-        background-color: rgb(39, 120, 190);
-    }
-
-    .ud2 .menu-button {
-        background-color: rgb(220, 100, 40);
-    }
-
-    .ud3 .menu-button {
-        background-color: rgb(140, 50, 200);
-    }
-
-    .ud4 .menu-button {
-        background-color: rgb(40, 150, 180);
-    }
-
-    .ud5 .menu-button {
-        background-color: rgb(200, 50, 150);
-    }
-}
